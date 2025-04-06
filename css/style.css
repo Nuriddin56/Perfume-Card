@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f2eae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.imgBx {
+  width: 50%;
+}
+
+.imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.details {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details .label {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #6c7289;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.details h2 {
+  font-size: 24px;
+  color: #1c232b;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.details p {
+  font-size: 14px;
+  color: #6c7289;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.price .new {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3d8168;
+}
+
+.price .old {
+  font-size: 14px;
+  color: #6c7289;
+  text-decoration: line-through;
+}
+
+button {
+  background-color: #3d8168;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a4032;
+}
